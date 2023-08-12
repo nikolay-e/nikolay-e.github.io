@@ -40,10 +40,10 @@ The default constructor's task is to initialize all data members. If a default c
 C++ provides multiple ways for initialization:
 
 ```c++
-std::string s; // default initialization
-std::string s{}; // value initialization
-std::string s{"hi"}; // direct initialization
-std::string s = "hi"; // copy initialization
+std::string s; // default initialization: default constructor is called, built-in types will have indeterminate values
+std::string s{}; // value initialization: initializes to a predictable value, built-in types will be zero-initialized
+std::string s{"hi"}; // direct initialization: initializes with the provided value, directly calls the relevant constructor
+std::string s = "hi"; // copy initialization: involves an extra copy operation, 
 std::string s{'h','i'}; // list initialization
 char a[3] = {'h','i'}; // aggregate initialization
 char& c = a[0]; // reference initialization
