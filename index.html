@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaQuiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LinguaQuiz</h1>
+        <div class="input-group">
+            <input type="file" id="file-input" accept=".csv" style="display:none;" onchange="handleFileUpload()">
+            <button onclick="document.getElementById('file-input').click()">Choose & Upload File</button>
+            <button id="reset-default">Or Use Default Word Set</button>
+        </div>
+        <p id="language-info">Translate the following word from <span id="language1"></span> to <span id="language2"></span>:</p>
+        <div class="question">
+            <span id="word"></span>
+        </div>
+        <div class="input-group">
+            <input type="text" id="answer" placeholder="Your translation">
+            <button id="submit">Submit</button>
+        </div>
+        <p id="feedback"></p>
+        <div id="words-to-learn">
+            <h2>Words to Learn</h2>
+            <ol id="words-to-learn-list"></ol>
+        </div>
+    </div>
+    <div class="stats-container">       
+        <h2>Current Stats</h2>
+        <p>Total Attempts: <span id="total-attempts">0</span></p>
+        <p>Correct Answers: <span id="correct-answers">0</span></p>
+        <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+        <p>Correct Answer Percentage: <span id="correct-percentage">0%</span></p>
+        <p>Average Time per Question: <span id="average-time">0</span> seconds</p>
+        <p>First Attempt Accuracy: <span id="first-attempt-accuracy">0%</span></p>
+        <p>Most Improved Words: <span id="most-improved-words">None</span></p>
+        <button id="download-stats">Download Stats</button>
+    </div>
+    <script src="js/stats.js"></script>
+    <script src="js/display.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
