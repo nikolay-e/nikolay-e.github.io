@@ -2,18 +2,8 @@
 #include <memory>
 #include <vector>
 
-// Quotation marks are used to specify relative header location to the current
-// file.
-// TODO: OR to the include folders that we pass to the compiler with -I
-// option??? "iostream.h" this is the C way to include headers from standard
-// libs. <iostream> this is the C++ way to include standard headers.
-// TODO: .hpp vs .h what has that to do with templates?
-
 template <typename T>
 class MyElement; // This is a forward declaration.
-
-// TODO: Discuss forward declaration.
-// TODO: Is there a way to define template class without forward declaration.
 
 template <typename T>
 class MyContainer
@@ -21,10 +11,6 @@ class MyContainer
 public:
     // This is a default constructor.
     MyContainer() : m_length(0), m_head(nullptr){};
-
-    // TODO: what are the benefits of the initialization list? What is the order
-    // of initialization in it?
-    // TODO: why it matters in which order the fields defined in the header?
 
     // This is a parametrized constructor
     MyContainer(const std::vector<T> &vec) : m_length(0), m_head(nullptr)
@@ -40,11 +26,7 @@ public:
     MyContainer(const MyContainer &mc)
         : m_head(mc.m_head), m_length(mc.m_length) {}
 
-    // TODO: what is explicit? Discuss default, explicit and other keywords
-    // aplicable to constructors
-
     // This is a move constructor, we have to set every field to null, to avoid double deletion
-    // TODO: Why double deletion might happen? give an example
     MyContainer(MyContainer &&mc)
         : m_head(std::move(mc.m_head)), m_length(mc.m_length)
     {
