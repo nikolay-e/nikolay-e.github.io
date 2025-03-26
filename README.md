@@ -1275,9 +1275,11 @@ print(s2);
 ### Associative Container – Map
 The Map associative container is defined in the `<map>` header. It can be used to implement a dictionary and stores key-value pairs. It does not allow equivalent keys and stores the key-value pairs as a binary tree. The Map container provides an index access operator; if a key is not present, it will be inserted with a default value. 
 
+{% raw %}
 ```cpp
 std::map<int,char> container{{1,'t'},{2,'o'},{3,'m'},{4,'a'},{5,'t'},{7,'o'}};
 ```
+{% endraw %}
 
 ```cpp
 # include <iostream>
