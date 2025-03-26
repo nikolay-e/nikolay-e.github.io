@@ -1290,11 +1290,11 @@ std::cout << "[" << i.first << ", " << i.second << "], ";
 std::cout << "};\n";
 }
 int main() {
-std::map<std::string, int> m = {{"John", 2412},{"David", 123},{"Tom", 9}}; print(m);
+std::map<std::string, int> m = { {"John", 2412},{"David", 123},{"Tom", 9} }; print(m);
 m.insert({"Jude", 42}); print(m);
 m["Albert"] = 66; print(m);
 std::cout << m["david"] << std::endl; print(m);
-std::map<std::string, int> m2 = {{"John", -1},{"Berta", -5},{"Tim", 1}} ; print(m2);
+std::map<std::string, int> m2 = { {"John", -1},{"Berta", -5},{"Tim", 1} } ; print(m2);
 m.merge(m2); print(m);
 print(m2);
 }
@@ -1306,7 +1306,7 @@ The Multimap associative container is also defined in the <map> header. It store
 
 
 ```cpp
-std::multimap<int,char> container{{1,'t'},{2,'o'},{2,'m'},{4,'a'},{7,'t'},{7,'o'}};
+std::multimap<int,char> container{ {1,'t'},{2,'o'},{2,'m'},{4,'a'},{7,'t'},{7,'o'} };
 ```
 
 ```cpp
@@ -1320,9 +1320,9 @@ std::cout << "[" << i.first << ", " << i.second << "], ";
 std::cout << "};\n";
 }
 int main() {
-std::multimap<std::string, int> m = {{"John", 2412},{"David", 123}}; print(m);
+std::multimap<std::string, int> m = { {"John", 2412},{"David", 123} }; print(m);
 m.insert({"Jude", 42}); print(m);
-std::multimap<std::string, int> m2 = {{"John", -1},{"Berta", -5}}; print(m2);
+std::multimap<std::string, int> m2 = { {"John", -1},{"Berta", -5} }; print(m2);
 m.merge(m2); print(m);
 print(m2);
 std::cout << "Count 'John': " << m.count("John") << std::endl;
@@ -1366,12 +1366,12 @@ std::cout << "};\n";
 }
 int main() {
 std::unordered_map<std::string, int> m
-= {{"John", 2412},{"David", 123},{"Tom", 9}}; print(m);
+= { {"John", 2412},{"David", 123},{"Tom", 9} }; print(m);
 m.insert({"Jude", 42}); print(m);
 m["Albert"] = 66; print(m);
 std::cout << m["david"] << std::endl; print(m);
 std::unordered_map<std::string, int> m2
-= {{"John", -1},{"Berta", -5},{"Tim", 1}} ; print(m2);
+= { {"John", -1},{"Berta", -5},{"Tim", 1} } ; print(m2);
 m.merge(m2); print(m);
 print(m2);
 }
