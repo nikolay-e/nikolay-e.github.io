@@ -4,13 +4,13 @@ Welcome to my collection of technical tutorials. Here you'll find practical guid
 
 ## Available Tutorials
 
-### [Advanced C++](/tutorials/cpp-advanced/)
+### [Advanced C++](/tutorials/advanced-cpp.md)
 Deep dive into modern C++ concepts, templates, performance optimization, memory management, and multithreading.
 
-### [GitHub Actions](/tutorials/github-actions/)
+### [GitHub Actions](/tutorials/github-actions.md)
 Learn how to automate your workflows with GitHub Actions, set up CI/CD pipelines, create custom actions, and optimize deployment processes.
 
-### [Kubernetes (K8s)](/tutorials/kubernetes/)
+### [Kubernetes (K8s)](/tutorials/kubernete.md)
 Master container orchestration with Kubernetes, including deployment, scaling, networking, storage, monitoring, and security practices.
 
 ## About
