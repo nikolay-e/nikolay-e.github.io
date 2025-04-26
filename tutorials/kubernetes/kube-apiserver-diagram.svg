@@ -64,7 +64,7 @@
   <text x="430" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Admission Control</text>
   
   <rect x="350" y="360" width="160" height="30" rx="5" ry="5" fill="#ffffff" stroke="#2050a0" stroke-width="1" />
-  <text x="430" y="380" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Validation & REST API</text>
+  <text x="430" y="380" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Validation &amp; REST API</text>
   
   <!-- Flow arrows inside API server -->
   <path d="M430,270 L430,280" stroke="#2050a0" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
