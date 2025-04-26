@@ -10,7 +10,7 @@ Deep dive into modern C++ concepts, templates, performance optimization, memory 
 ### [GitHub Actions](/tutorials/github-actions.md)
 Learn how to automate your workflows with GitHub Actions, set up CI/CD pipelines, create custom actions, and optimize deployment processes.
 
-### [Kubernetes (K8s)](/tutorials/kubernetes.md)
+### [Kubernetes (K8s)](/tutorials/kubernetes/kubernetes.md)
 Master container orchestration with Kubernetes, including deployment, scaling, networking, storage, monitoring, and security practices.
 
 ## About
