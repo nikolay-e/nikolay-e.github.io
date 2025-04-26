@@ -245,7 +245,7 @@ Kubernetes функционирует как распределенная сис
    
    Узлы контрольной плоскости управляют кластером и включают следующие компоненты:
 
-   ![Архитектура kube-apiserver](kube-apiserver-diagram.svg)
+   ![Архитектура kube-apiserver](https://github.com/nikolay-e/nikolay-e.github.io/blob/master/tutorials/kubernetes/kube-apiserver-diagram.svg)
 
    - **kube-apiserver**
      - Центральный компонент, обрабатывающий API-запросы
